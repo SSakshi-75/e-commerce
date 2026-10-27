@@ -1,0 +1,480 @@
+/* ==========================================================================
+   MegaMart - Premium Red & Black E-Commerce Stylesheet (style.css)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --mm-font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --mm-primary: #e60000;
+    --mm-primary-hover: #c70000;
+    --mm-primary-light: #fff1f2;
+    --mm-dark: #111111;
+    --mm-black: #000000;
+    --mm-secondary: #1f2937;
+    --mm-muted: #6b7280;
+    --mm-light: #f8f9fa;
+    --mm-border: #e5e7eb;
+    --mm-border-light: #f3f4f6;
+    --mm-card-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    --mm-card-hover-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.1);
+    --mm-radius-sm: 6px;
+    --mm-radius-md: 10px;
+    --mm-radius-lg: 16px;
+    --mm-radius-pill: 50px;
+    --mm-transition: all 0.25s ease-in-out;
+}
+
+body {
+    font-family: var(--mm-font-family);
+    color: #111827;
+    background-color: #f8f9fa;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: var(--mm-transition);
+}
+
+a:hover {
+    color: var(--mm-primary);
+}
+
+/* ==========================================================================
+   HEADER CONTAINER & TOP ANNOUNCEMENT BAR
+   ========================================================================== */
+.header-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 38px;
+}
+
+@media (max-width: 1200px) {
+    .header-container {
+        padding: 0 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        padding: 0 16px;
+    }
+}
+
+.top-announcement-bar {
+    background: #000000;
+    color: #ffffff;
+    font-size: 11.5px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    letter-spacing: -0.1px;
+}
+
+.top-announcement-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.top-announcement-bar a:hover {
+    color: #ff4d4d;
+}
+
+/* ==========================================================================
+   MAIN HEADER & NAVIGATION (PIXEL-PERFECT SHOPX REFERENCE THEME)
+   ========================================================================== */
+.main-header {
+    background: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.main-header-inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Brand Logo (ShopX Style) */
+.brand-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.brand-logo-img {
+    height: 34px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.12));
+    transition: transform 0.2s ease;
+}
+
+.brand-logo:hover .brand-logo-img {
+    transform: scale(1.05);
+}
+
+.brand-name-shopx {
+    font-size: 24px;
+    font-weight: 800;
+    color: #000000;
+    letter-spacing: -0.5px;
+    line-height: 1;
+    margin: 0;
+}
+
+.brand-name-shopx span {
+    color: #e60000;
+}
+
+/* Navigation Links (ShopX Clean Row) */
+.nav-shopx {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0 0 0 clamp(40px, 7.5vw, 100px);
+    padding: 0;
+    gap: clamp(14px, 1.8vw, 22px);
+    flex-shrink: 0;
+}
+
+.nav-shopx-link {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1f2937;
+    text-decoration: none;
+    padding: 4px 2px;
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    line-height: 1;
+    transition: color 0.15s ease;
+}
+
+.nav-shopx-link:hover {
+    color: #e60000;
+}
+
+/* Active "Home" Button: Solid Red Soft-Rounded Rectangle */
+.nav-shopx-link.active {
+    background: #e60000;
+    color: #ffffff !important;
+    padding: 5px 15px;
+    border-radius: 7px;
+    font-weight: 600;
+}
+
+.nav-shopx-link.active:hover {
+    background: #d60000;
+    color: #ffffff !important;
+}
+
+.dropdown-chevron {
+    stroke-width: 2.5;
+    margin-left: 1px;
+}
+
+/* Right Actions (Search Bar, Wishlist & Cart) */
+.header-actions-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: clamp(16px, 2vw, 24px);
+    flex-shrink: 0;
+}
+
+/* Search Bar (Clean Integrated Box with Attached Red End Button) */
+.search-bar-shopx {
+    display: flex;
+    align-items: center;
+    background: #f4f5f7;
+    border: 1px solid #e5e7eb;
+    border-radius: 7px;
+    height: 33px;
+    width: clamp(170px, 16vw, 230px);
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.search-bar-shopx:focus-within {
+    background: #ffffff;
+    border-color: #e60000;
+    box-shadow: 0 0 0 2px rgba(230, 0, 0, 0.08);
+}
+
+.search-bar-shopx input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: 12px;
+    padding: 0 10px;
+    width: calc(100% - 32px);
+    color: #1f2937;
+    height: 100%;
+}
+
+.search-bar-shopx input::placeholder {
+    color: #9ca3af;
+    font-weight: 400;
+}
+
+/* Red Search Button (Rectangular block flush with search container) */
+.btn-search-shopx {
+    background: #e60000;
+    border: none;
+    color: #ffffff;
+    width: 32px;
+    height: 100%;
+    border-radius: 0 6px 6px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    padding: 0;
+    transition: background 0.15s ease;
+}
+
+.btn-search-shopx:hover {
+    background: #d60000;
+}
+
+/* Icons Wrap (Heart & Cart) */
+.header-icon-wrap {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.icon-btn-shopx {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    text-decoration: none;
+    padding: 2px;
+    line-height: 1;
+    transition: transform 0.15s ease;
+}
+
+.icon-btn-shopx:hover {
+    transform: scale(1.08);
+}
+
+.icon-btn-shopx svg {
+    display: block;
+}
+
+.badge-count {
+    position: absolute;
+    top: -4px;
+    right: -6px;
+    background: #e60000;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ffffff;
+    line-height: 1;
+    pointer-events: none;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* ==========================================================================
+   SECTION TITLE ACCENT (RED VERTICAL BAR)
+   ========================================================================= */
+.section-title-bar {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #111111;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0;
+}
+
+.title-bar-red {
+    width: 4px;
+    height: 22px;
+    background: var(--mm-primary);
+    border-radius: 2px;
+    display: inline-block;
+}
+
+/* ==========================================================================
+   FOOTER (SHOPX MINIMAL DARK STYLE)
+   ========================================================================== */
+.footer-shopx {
+    background: #000000;
+    color: #ffffff;
+    padding: 12px 0 10px;
+    border-top: 1px solid #1a1a1a;
+}
+
+.footer-inner-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-col-brand {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.footer-v-divider {
+    width: 1px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.25);
+    margin: 0 14px;
+    flex-shrink: 0;
+}
+
+.footer-col-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 4px;
+    line-height: 1;
+}
+
+.footer-links-inline {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-links-inline a {
+    color: #ffffff;
+    font-size: 11px;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.footer-links-inline a:hover {
+    color: #e60000;
+}
+
+.footer-contact-row {
+    display: flex;
+    align-items: center;
+}
+
+.footer-info-item {
+    color: #ffffff;
+    font-size: 11px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.15s ease;
+}
+
+.footer-info-item:hover {
+    color: #e60000;
+}
+
+.footer-social-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-circle-white {
+    width: 22px;
+    height: 22px;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+
+.social-circle-white:hover {
+    background: #e60000;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+@media (max-width: 991px) {
+    .footer-inner-grid {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .footer-v-divider {
+        display: none !important;
+    }
+}
+
+/* Toast container */
+.toast-container {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 1090;
+}
+
+.mm-toast {
+    background: #ffffff;
+    border-radius: var(--mm-radius-md);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15);
+    border-left: 4px solid var(--mm-primary);
+    min-width: 300px;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 42px;
+    height: 42px;
+    background: var(--mm-primary);
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 12px rgba(230, 0, 0, 0.35);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--mm-transition);
+    z-index: 999;
+}
+
+.back-to-top.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background: var(--mm-primary-hover);
+    color: #ffffff;
+    transform: translateY(-3px);
+}
