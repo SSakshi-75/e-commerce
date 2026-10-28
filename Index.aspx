@@ -10,31 +10,25 @@
         <section class="hero-banner-section">
             <div class="hero-slider-wrap">
                 <!-- Slide 1 -->
-                <a href="Products.aspx" class="hero-banner-slide active" id="heroSlide1" style="display: block;" title="Shop Mega Sale - Big Style. Bigger Savings.">
-                    <img src="images/banners/hero-banner.jpg" alt="Big Style Bigger Savings - Mega Sale" class="hero-banner-img" />
+                <a href="Products.aspx" class="hero-banner-slide active" id="heroSlide1" style="display: block;"
+                    title="Shop Mega Sale - Big Style. Bigger Savings.">
+                    <img src="images/banners/hero-banner-1.jpg" alt="Big Style Bigger Savings - Mega Sale"
+                        class="hero-banner-img" />
                 </a>
 
                 <!-- Slide 2 -->
-                <a href="Products.aspx" class="hero-banner-slide" id="heroSlide2" style="display: none;" title="Trending Tech - Bigger Choices">
-                    <img src="images/banners/hero-banner-2.jpg" alt="Trending Tech - Bigger Choices" class="hero-banner-img" />
+                <a href="Products.aspx" class="hero-banner-slide" id="heroSlide2" style="display: none;"
+                    title="Trending Tech - Bigger Choices">
+                    <img src="images/banners/hero-banner-2.jpg" alt="Trending Tech - Bigger Choices"
+                        class="hero-banner-img" />
                 </a>
 
                 <!-- Slide 3 -->
-                <a href="Products.aspx?filter=deals" class="hero-banner-slide" id="heroSlide3" style="display: none;" title="Stylish Picks - Flat 50% Off">
-                    <img src="images/banners/hero-banner-3.jpg" alt="Stylish Picks - Flat 50% Off" class="hero-banner-img" />
+                <a href="Products.aspx?filter=deals" class="hero-banner-slide" id="heroSlide3" style="display: none;"
+                    title="Stylish Picks - Flat 50% Off">
+                    <img src="images/banners/hero-banner-3.jpg" alt="Stylish Picks - Flat 50% Off"
+                        class="hero-banner-img" />
                 </a>
-
-                <!-- Carousel Navigation Controls -->
-                <button type="button" class="hero-arrow-btn hero-arrow-prev" id="heroPrevBtn" aria-label="Previous Slide">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="15 18 9 12 15 6"></polyline>
-                    </svg>
-                </button>
-                <button type="button" class="hero-arrow-btn hero-arrow-next" id="heroNextBtn" aria-label="Next Slide">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="9 18 15 12 9 6"></polyline>
-                    </svg>
-                </button>
 
                 <!-- Pagination Dots Notch -->
                 <div class="hero-dots-notch">
@@ -57,8 +51,6 @@
                         document.getElementById('heroDot1'),
                         document.getElementById('heroDot2')
                     ];
-                    var prev = document.getElementById('heroPrevBtn');
-                    var next = document.getElementById('heroNextBtn');
                     var current = 0;
 
                     function showBanner(idx) {
@@ -72,8 +64,6 @@
                         }
                     }
 
-                    if (next) next.onclick = function (e) { e.preventDefault(); showBanner(current + 1); };
-                    if (prev) prev.onclick = function (e) { e.preventDefault(); showBanner(current - 1); };
                     if (d[0]) d[0].onclick = function (e) { e.preventDefault(); showBanner(0); };
                     if (d[1]) d[1].onclick = function (e) { e.preventDefault(); showBanner(1); };
                     if (d[2]) d[2].onclick = function (e) { e.preventDefault(); showBanner(2); };
@@ -330,6 +320,100 @@
                                 <span class="showcase-card-title">Wearables</span>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. CURATED SPOTLIGHT & ASSURANCE SECTION -->
+        <section class="home-section curated-spotlight-section">
+            <div class="header-container">
+                <!-- Top Card: Wrapped with love + 6 Curated Cards Strip -->
+                <div class="curated-strip-card">
+                    <!-- Left: Wrapped with love -->
+                    <div class="curated-gift-badge">
+                        <div class="curated-gift-icon-wrap">
+                            <img src="images/banners/card-img.jpg" alt="Wrapped with love" class="curated-gift-img" />
+                        </div>
+                        <span class="curated-gift-title">Wrapped with love</span>
+                    </div>
+
+                    <div class="curated-divider"></div>
+
+                    <!-- Right: 6 Curated Cards Track -->
+                    <div class="curated-cards-track">
+                        <a href="Products.aspx?cat=footwear" class="curated-card-item">
+                            <div class="curated-card-img-box bg-tint-1">
+                                <img src="images/products/nike-air-force-1.png" alt="Trending Hoops" />
+                            </div>
+                            <span class="curated-card-label">TRENDING HOOPS</span>
+                        </a>
+
+                        <a href="Products.aspx?cat=watches" class="curated-card-item">
+                            <div class="curated-card-img-box bg-tint-2">
+                                <img src="images/products/fire-boltt-smartwatch.png" alt="Thin Bangles" />
+                            </div>
+                            <span class="curated-card-label">THIN BANGLES</span>
+                        </a>
+
+                        <a href="Products.aspx?cat=fashion" class="curated-card-item">
+                            <div class="curated-card-img-box bg-tint-3">
+                                <img src="images/categories/fashion.png" alt="Festive Styles" />
+                            </div>
+                            <span class="curated-card-label">FESTIVE STYLES</span>
+                        </a>
+
+                        <a href="Products.aspx?cat=electronics" class="curated-card-item">
+                            <div class="curated-card-img-box bg-tint-4">
+                                <img src="images/products/boat-rockerz-450.png" alt="Cute Studs in 9KT Gold" />
+                            </div>
+                            <span class="curated-card-label">CUTE STUDS IN 9KT GOLD</span>
+                        </a>
+
+                        <a href="Products.aspx?cat=bags" class="curated-card-item">
+                            <div class="curated-card-img-box bg-tint-5">
+                                <img src="images/products/wildcraft-backpack.png" alt="Affordable Gifts" />
+                            </div>
+                            <span class="curated-card-label">AFFORDABLE GIFTS</span>
+                        </a>
+
+                        <a href="Products.aspx?cat=beauty" class="curated-card-item">
+                            <div class="curated-card-img-box bg-tint-6">
+                                <img src="images/categories/beauty.png" alt="Nose Pins" />
+                            </div>
+                            <span class="curated-card-label">NOSE PINS</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bottom Bar: 4 Trust & Assurance Badges (CaratLane Style) -->
+                <div class="trust-assurance-strip">
+                    <div class="assurance-item">
+                        <div class="assurance-icon-circle circle-blue">
+                            <i class="bi bi-patch-check-fill"></i>
+                        </div>
+                        <span class="assurance-text">100% Certified</span>
+                    </div>
+
+                    <div class="assurance-item">
+                        <div class="assurance-icon-circle circle-pink">
+                            <i class="bi bi-calendar2-check-fill"></i>
+                        </div>
+                        <span class="assurance-text">15 Day Exchange</span>
+                    </div>
+
+                    <div class="assurance-item">
+                        <div class="assurance-icon-circle circle-green">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <span class="assurance-text">Lifetime Exchange</span>
+                    </div>
+
+                    <div class="assurance-item">
+                        <div class="assurance-icon-circle circle-yellow">
+                            <i class="bi bi-arrow-repeat"></i>
+                        </div>
+                        <span class="assurance-text">One Year Warranty</span>
                     </div>
                 </div>
             </div>

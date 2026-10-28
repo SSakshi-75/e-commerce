@@ -183,7 +183,7 @@
     background: #ffffff;
     border: 1px solid #f1f3f5;
     border-radius: 12px;
-    padding: 14px 8px 12px;
+    padding: 16px 8px 14px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -200,7 +200,7 @@
 }
 
 .category-img-box {
-    height: 68px;
+    height: 70px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -574,7 +574,9 @@
 .highlight-red-text {
     background: linear-gradient(90deg, #ff3838, #e60000);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 .featured-promo-desc {
@@ -857,5 +859,284 @@
     .promo-showcase-card.card-sub2 {
         width: 115px;
         height: 105px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   5. CURATED SPOTLIGHT SECTION ("WRAPPED WITH LOVE" CARDS STRIP)
+   -------------------------------------------------------------------------- */
+.curated-spotlight-section {
+    padding-top: 10px;
+    padding-bottom: 48px;
+}
+
+.curated-spotlight-section .header-container {
+    max-width: 1750px;
+    width: 96%;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.curated-strip-card {
+    background: #ffffff;
+    border: 1px solid #ede8f2;
+    border-radius: 16px;
+    padding: 36px 40px;
+    min-height: 275px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04), 0 1px 4px rgba(0, 0, 0, 0.02);
+    transition: box-shadow 0.3s ease;
+}
+
+.curated-strip-card:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+}
+
+/* Left: Wrapped with love */
+.curated-gift-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 150px;
+    flex-shrink: 0;
+}
+
+.curated-gift-icon-wrap {
+    width: 95px;
+    height: 95px;
+    border-radius: 20px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    transition: transform 0.35s ease;
+}
+
+.curated-gift-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.18));
+    transition: transform 0.35s ease;
+}
+
+.curated-strip-card:hover .curated-gift-img {
+    transform: scale(1.09) rotate(-3deg);
+}
+
+.curated-gift-title {
+    font-size: 14px;
+    font-weight: 800;
+    color: #2b1f33;
+    line-height: 1.25;
+    letter-spacing: -0.2px;
+}
+
+/* Vertical divider */
+.curated-divider {
+    width: 1px;
+    height: 150px;
+    background: linear-gradient(180deg, transparent, #e8e2ee 25%, #e8e2ee 75%, transparent);
+    flex-shrink: 0;
+}
+
+/* Right: Cards track */
+.curated-cards-track {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    flex: 1;
+    overflow-x: auto;
+    padding: 8px 2px;
+    scrollbar-width: thin;
+}
+
+.curated-card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    flex: 1;
+    min-width: 140px;
+    max-width: 185px;
+    text-align: center;
+    transition: transform 0.28s ease;
+}
+
+.curated-card-img-box {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    max-height: 165px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    transition: transform 0.32s ease, box-shadow 0.32s ease;
+}
+
+.curated-card-img-box img {
+    max-width: 86%;
+    max-height: 86%;
+    object-fit: contain;
+    filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.16));
+    transition: transform 0.35s ease;
+}
+
+/* Reference color palette tints */
+.bg-tint-1 {
+    background: linear-gradient(145deg, #0d364a 0%, #17546e 100%);
+}
+
+.bg-tint-2 {
+    background: linear-gradient(145deg, #f7f5f2 0%, #e8e2db 100%);
+}
+
+.bg-tint-3 {
+    background: linear-gradient(145deg, #2c0b37 0%, #4c1557 100%);
+}
+
+.bg-tint-4 {
+    background: linear-gradient(145deg, #fee2e4 0%, #fbd2e1 100%);
+}
+
+.bg-tint-5 {
+    background: linear-gradient(145deg, #442e1f 0%, #63462d 100%);
+}
+
+.bg-tint-6 {
+    background: linear-gradient(145deg, #d8d0e7 0%, #c4b5dc 100%);
+}
+
+.curated-card-item:hover .curated-card-img-box {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(230, 0, 0, 0.18);
+}
+
+.curated-card-item:hover .curated-card-img-box img {
+    transform: scale(1.09);
+}
+
+.curated-card-label {
+    font-size: 11px;
+    font-weight: 800;
+    color: #42324f;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    line-height: 1.35;
+    display: block;
+    transition: color 0.2s ease;
+}
+
+.curated-card-item:hover .curated-card-label {
+    color: #e60000;
+}
+
+/* --------------------------------------------------------------------------
+   TRUST & ASSURANCE STRIP (CARATLANE STYLE 4 BADGES)
+   -------------------------------------------------------------------------- */
+.trust-assurance-strip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+    margin-top: 26px;
+    padding: 16px 28px;
+    background: #ffffff;
+    border: 1px solid #ede8f2;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
+}
+
+.assurance-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    cursor: default;
+    transition: transform 0.2s ease;
+}
+
+.assurance-item:hover {
+    transform: translateY(-2px);
+}
+
+.assurance-icon-circle {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.assurance-icon-circle.circle-blue {
+    background: #e8f3ff;
+    color: #1a73e8;
+}
+
+.assurance-icon-circle.circle-pink {
+    background: #fdebee;
+    color: #e60000;
+}
+
+.assurance-icon-circle.circle-green {
+    background: #eafaf1;
+    color: #1e8e3e;
+}
+
+.assurance-icon-circle.circle-yellow {
+    background: #fef7e0;
+    color: #f29900;
+}
+
+.assurance-text {
+    font-size: 13px;
+    font-weight: 700;
+    color: #374151;
+    letter-spacing: -0.1px;
+}
+
+/* Responsive */
+@media (max-width: 1150px) {
+    .curated-strip-card {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 24px 20px;
+    }
+
+    .curated-divider {
+        width: 80%;
+        height: 1px;
+    }
+
+    .curated-cards-track {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .trust-assurance-strip {
+        gap: 28px;
+    }
+}
+
+@media (max-width: 575px) {
+    .trust-assurance-strip {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 16px 20px;
     }
 }

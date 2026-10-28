@@ -92,7 +92,7 @@ a:hover {
    ========================================================================== */
 .main-header {
     background: #ffffff;
-    padding: 15px 0;
+    padding: 22px 0;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
     position: sticky;
     top: 0;
@@ -153,9 +153,9 @@ a:hover {
 }
 
 .nav-shopx-link {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
-    color: #1f2937;
+    color: #000000;
     text-decoration: none;
     padding: 4px 2px;
     display: inline-flex;
@@ -173,7 +173,7 @@ a:hover {
 .nav-shopx-link.active {
     background: #e60000;
     color: #ffffff !important;
-    padding: 5px 15px;
+    padding: 10px 15px;
     border-radius: 7px;
     font-weight: 600;
 }
@@ -427,6 +427,7 @@ a:hover {
         flex-wrap: wrap;
         gap: 16px;
     }
+
     .footer-v-divider {
         display: none !important;
     }
