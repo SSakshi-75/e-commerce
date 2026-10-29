@@ -338,47 +338,45 @@
                         <span class="curated-gift-title">Wrapped with love</span>
                     </div>
 
-                    <div class="curated-divider"></div>
-
                     <!-- Right: 6 Curated Cards Track -->
                     <div class="curated-cards-track">
                         <a href="Products.aspx?cat=footwear" class="curated-card-item">
-                            <div class="curated-card-img-box bg-tint-1">
+                            <div class="curated-card-img-box">
                                 <img src="images/products/nike-air-force-1.png" alt="Trending Hoops" />
                             </div>
                             <span class="curated-card-label">TRENDING HOOPS</span>
                         </a>
 
                         <a href="Products.aspx?cat=watches" class="curated-card-item">
-                            <div class="curated-card-img-box bg-tint-2">
+                            <div class="curated-card-img-box">
                                 <img src="images/products/fire-boltt-smartwatch.png" alt="Thin Bangles" />
                             </div>
                             <span class="curated-card-label">THIN BANGLES</span>
                         </a>
 
                         <a href="Products.aspx?cat=fashion" class="curated-card-item">
-                            <div class="curated-card-img-box bg-tint-3">
+                            <div class="curated-card-img-box">
                                 <img src="images/categories/fashion.png" alt="Festive Styles" />
                             </div>
                             <span class="curated-card-label">FESTIVE STYLES</span>
                         </a>
 
                         <a href="Products.aspx?cat=electronics" class="curated-card-item">
-                            <div class="curated-card-img-box bg-tint-4">
+                            <div class="curated-card-img-box">
                                 <img src="images/products/boat-rockerz-450.png" alt="Cute Studs in 9KT Gold" />
                             </div>
                             <span class="curated-card-label">CUTE STUDS IN 9KT GOLD</span>
                         </a>
 
                         <a href="Products.aspx?cat=bags" class="curated-card-item">
-                            <div class="curated-card-img-box bg-tint-5">
+                            <div class="curated-card-img-box">
                                 <img src="images/products/wildcraft-backpack.png" alt="Affordable Gifts" />
                             </div>
                             <span class="curated-card-label">AFFORDABLE GIFTS</span>
                         </a>
 
                         <a href="Products.aspx?cat=beauty" class="curated-card-item">
-                            <div class="curated-card-img-box bg-tint-6">
+                            <div class="curated-card-img-box">
                                 <img src="images/categories/beauty.png" alt="Nose Pins" />
                             </div>
                             <span class="curated-card-label">NOSE PINS</span>
@@ -417,5 +415,413 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- 6. PROMO BANNER CAROUSEL (10 SLIDING BANNER CARDS) -->
+        <section class="home-section promo-slider-section">
+            <div class="header-container">
+                <div class="promo-carousel-container">
+                    <!-- Carousel Track with 10 Banner Cards -->
+                    <div class="promo-carousel-track" id="promoBannerTrack">
+                        <!-- Card 1 -->
+                        <div class="promo-banner-slide">
+                            <!-- <div class="promo-banner-placeholder" style="background: linear-gradient(135deg, #42102e, #731e4d);">
+                                <div class="promo-placeholder-info">
+                                    <span class="promo-badge">Card 1</span>
+                                    <p class="promo-placeholder-title">Banner 1</p>
+                                    <span class="promo-placeholder-dim">Size: 1000 &times; 450 px</span>
+                                </div>
+                            </div> -->
+                            <img src="images/banners/banner-1.jpg" alt="Banner 1" />
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="promo-banner-slide">
+                            <!-- <div class="promo-banner-placeholder"
+                                style="background: linear-gradient(135deg, #1b263b, #2b4162);">
+                                <div class="promo-placeholder-info">
+                                    <span class="promo-badge">Card 2</span>
+                                    <p class="promo-placeholder-title">Banner 2</p>
+                                    <span class="promo-placeholder-dim">Size: 1000 &times; 450 px</span>
+                                </div>
+                            </div> -->
+                            <img src="images/banners/banner-2.jpg" alt="Banner 2" />
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="promo-banner-slide">
+                            <!-- <div class="promo-banner-placeholder"
+                                style="background: linear-gradient(135deg, #2b1f33, #4a3456);">
+                                <div class="promo-placeholder-info">
+                                    <span class="promo-badge">Card 3</span>
+                                    <p class="promo-placeholder-title">Banner 3</p>
+                                    <span class="promo-placeholder-dim">Size: 1000 &times; 450 px</span>
+                                </div>
+                            </div> -->
+                            <img src="images/banners/banner-3.jpg" alt="Banner 3" />
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="promo-banner-slide">
+                            <!-- <div class="promo-banner-placeholder"
+                                style="background: linear-gradient(135deg, #143642, #0f8a5f);">
+                                <div class="promo-placeholder-info">
+                                    <span class="promo-badge">Card 4</span>
+                                    <p class="promo-placeholder-title">Banner 4</p>
+                                    <span class="promo-placeholder-dim">Size: 1000 &times; 450 px</span>
+                                </div>
+                            </div> -->
+                            <img src="images/banners/banner-4.jpg" alt="Banner 4" />
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="promo-banner-slide">
+                            <img src="images/banners/banner-5.jpg" alt="Banner 5" />
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="promo-banner-slide">
+                            <img src="images/banners/banner-6.jpg" alt="Banner 6" />
+                            <!-- <div class="promo-banner-placeholder"
+                                style="background: linear-gradient(135deg, #3a0ca3, #4361ee);">
+                                <div class="promo-placeholder-info">
+                                    <span class="promo-badge">Card 6</span>
+                                    <p class="promo-placeholder-title">Banner 6</p>
+                                    <span class="promo-placeholder-dim">Size: 1000 &times; 450 px</span>
+                                </div>
+                            </div> -->
+                        </div>
+
+                        <!-- Card 7 -->
+                        <div class="promo-banner-slide">
+                            <!-- <div class="promo-banner-placeholder"
+                                style="background: linear-gradient(135deg, #590d22, #800f2f);">
+                                <div class="promo-placeholder-info">
+                                    <span class="promo-badge">Card 7</span>
+                                    <p class="promo-placeholder-title">Banner 7</p>
+                                    <span class="promo-placeholder-dim">Size: 1000 &times; 450 px</span>
+                                </div>
+                            </div> -->
+                            <img src="images/banners/banner-7.jpg" alt="Banner 7" />
+                        </div>
+
+                        <!-- Card 8 -->
+                        <div class="promo-banner-slide">
+                            <!-- <div class="promo-banner-placeholder"
+                                style="background: linear-gradient(135deg, #1d3557, #457b9d);">
+                                <div class="promo-placeholder-info">
+                                    <span class="promo-badge">Card 8</span>
+                                    <p class="promo-placeholder-title">Banner 8</p>
+                                    <span class="promo-placeholder-dim">Size: 1000 &times; 450 px</span>
+                                </div>
+                            </div> -->
+                            <img src="images/banners/banner-8.jpg" alt="Banner 8" />
+                        </div>
+
+                        <!-- Card 9 -->
+                        <div class="promo-banner-slide">
+                            <!-- <div class="promo-banner-placeholder"
+                                style="background: linear-gradient(135deg, #283618, #606c38);">
+                                <div class="promo-placeholder-info">
+                                    <span class="promo-badge">Card 9</span>
+                                    <p class="promo-placeholder-title">Banner 9</p>
+                                    <span class="promo-placeholder-dim">Size: 1000 &times; 450 px</span>
+                                </div>
+                            </div> -->
+                            <img src="images/banners/banner-9.jpg" alt="Banner 9" />
+                        </div>
+
+                        <!-- Card 10 -->
+                        <div class="promo-banner-slide">
+                            <!-- <div class="promo-banner-placeholder"
+                                style="background: linear-gradient(135deg, #3d0c02, #6f1d1b);">
+                                <div class="promo-placeholder-info">
+                                    <span class="promo-badge">Card 10</span>
+                                    <p class="promo-placeholder-title">Banner 10</p>
+                                    <span class="promo-placeholder-dim">Size: 1000 &times; 450 px</span>
+                                </div>
+                            </div> -->
+                            <img src="images/banners/banner-10.jpg" alt="Banner 10" />
+                        </div>
+                    </div>
+
+                    <!-- Bottom Navigation: Pagination Dots -->
+                    <div class="promo-carousel-bottom">
+                        <div class="promo-carousel-dots" id="promoBannerDots"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Auto-sliding 3-Card Carousel Script -->
+            <script>
+                (function () {
+                    var track = document.getElementById('promoBannerTrack');
+                    var dotsContainer = document.getElementById('promoBannerDots');
+                    if (!track) return;
+
+                    var slides = track.querySelectorAll('.promo-banner-slide');
+                    var totalSlides = slides.length;
+                    var currentIndex = 0;
+                    var autoSlideTimer = null;
+
+                    // Create dots
+                    if (dotsContainer) {
+                        for (var i = 0; i < totalSlides; i++) {
+                            var dot = document.createElement('span');
+                            dot.className = 'promo-dot' + (i === 0 ? ' active' : '');
+                            dot.setAttribute('data-index', i);
+                            (function (idx) {
+                                dot.onclick = function () {
+                                    scrollToIndex(idx);
+                                    restartAutoSlide();
+                                };
+                            })(i);
+                            dotsContainer.appendChild(dot);
+                        }
+                    }
+
+                    var dots = dotsContainer ? dotsContainer.querySelectorAll('.promo-dot') : [];
+
+                    function getSlideWidth() {
+                        if (slides.length === 0) return 300;
+                        return slides[0].offsetWidth + 16;
+                    }
+
+                    function scrollToIndex(idx) {
+                        if (idx < 0) idx = 0;
+                        if (idx > totalSlides - 3) idx = 0; // Loop back after last set of 3 cards
+                        currentIndex = idx;
+                        track.scrollTo({
+                            left: idx * getSlideWidth(),
+                            behavior: 'smooth'
+                        });
+                        updateDots(idx);
+                    }
+
+                    function updateDots(activeIdx) {
+                        for (var i = 0; i < dots.length; i++) {
+                            dots[i].classList.toggle('active', i === activeIdx);
+                        }
+                    }
+
+                    function nextSlide() {
+                        var nextIdx = currentIndex + 1;
+                        if (nextIdx > totalSlides - 3) {
+                            nextIdx = 0;
+                        }
+                        scrollToIndex(nextIdx);
+                    }
+
+                    function startAutoSlide() {
+                        stopAutoSlide();
+                        autoSlideTimer = setInterval(nextSlide, 2000); // Auto slide every 2 seconds
+                    }
+
+                    function stopAutoSlide() {
+                        if (autoSlideTimer) {
+                            clearInterval(autoSlideTimer);
+                            autoSlideTimer = null;
+                        }
+                    }
+
+                    function restartAutoSlide() {
+                        stopAutoSlide();
+                        startAutoSlide();
+                    }
+
+                    // Start automatic sliding
+                    startAutoSlide();
+
+                    // Pause when hovering over the cards
+                    track.addEventListener('mouseenter', stopAutoSlide);
+                    track.addEventListener('mouseleave', startAutoSlide);
+
+                    track.addEventListener('scroll', function () {
+                        var slideW = getSlideWidth();
+                        if (slideW > 0) {
+                            var active = Math.round(track.scrollLeft / slideW);
+                            if (active >= 0 && active < totalSlides) {
+                                currentIndex = active;
+                                updateDots(active);
+                            }
+                        }
+                    }, { passive: true });
+                })();
+            </script>
+        </section>
+
+        <!-- 7. COLLECTIONS SLIDER SECTION -->
+        <section class="home-section collections-slider-section">
+            <div class="header-container">
+                <div class="collections-header-wrap">
+                    <h2 class="collections-section-title">
+                        <span class="section-accent-pill"></span>
+                        Featured Collections
+                    </h2>
+                </div>
+
+                <div class="collections-carousel-container">
+                    <!-- Collections Carousel Track (10 Square Cards) -->
+                    <div class="collections-carousel-track" id="collectionsCarouselTrack">
+                        <!-- Collection Card 1 -->
+                        <div class="collection-slide-card">
+                            <div class="collection-placeholder" style="background: linear-gradient(145deg, #0b1a4a, #16387c);">
+                                <span class="collection-badge">Collection 1</span>
+                                <h3 class="collection-card-name">IRIS</h3>
+                                <span class="collection-dim-label">Size: 600 &times; 600 px</span>
+                            </div>
+                        </div>
+
+                        <!-- Collection Card 2 -->
+                        <div class="collection-slide-card">
+                            <div class="collection-placeholder" style="background: linear-gradient(145deg, #420a1c, #6b1430);">
+                                <span class="collection-badge">Collection 2</span>
+                                <h3 class="collection-card-name">Diya</h3>
+                                <span class="collection-dim-label">Size: 600 &times; 600 px</span>
+                            </div>
+                        </div>
+
+                        <!-- Collection Card 3 -->
+                        <div class="collection-slide-card">
+                            <div class="collection-placeholder" style="background: linear-gradient(145deg, #2b3a42, #475d69);">
+                                <span class="collection-badge">Collection 3</span>
+                                <h3 class="collection-card-name">Ajrakh</h3>
+                                <span class="collection-dim-label">Size: 600 &times; 600 px</span>
+                            </div>
+                        </div>
+
+                        <!-- Collection Card 4 -->
+                        <div class="collection-slide-card">
+                            <div class="collection-placeholder" style="background: linear-gradient(145deg, #3d5a45, #5e8469);">
+                                <span class="collection-badge">Collection 4</span>
+                                <h3 class="collection-card-name">Blush</h3>
+                                <span class="collection-dim-label">Size: 600 &times; 600 px</span>
+                            </div>
+                        </div>
+
+                        <!-- Collection Card 5 -->
+                        <div class="collection-slide-card">
+                            <div class="collection-placeholder" style="background: linear-gradient(145deg, #441c0e, #73301a);">
+                                <span class="collection-badge">Collection 5</span>
+                                <h3 class="collection-card-name">Agni</h3>
+                                <span class="collection-dim-label">Size: 600 &times; 600 px</span>
+                            </div>
+                        </div>
+
+                        <!-- Collection Card 6 -->
+                        <div class="collection-slide-card">
+                            <div class="collection-placeholder" style="background: linear-gradient(145deg, #18181b, #27272a);">
+                                <span class="collection-badge">Collection 6</span>
+                                <h3 class="collection-card-name">Aaranya</h3>
+                                <span class="collection-dim-label">Size: 600 &times; 600 px</span>
+                            </div>
+                        </div>
+
+                        <!-- Collection Card 7 -->
+                        <div class="collection-slide-card">
+                            <div class="collection-placeholder" style="background: linear-gradient(145deg, #1f3a3d, #355f63);">
+                                <span class="collection-badge">Collection 7</span>
+                                <h3 class="collection-card-name">Noor</h3>
+                                <span class="collection-dim-label">Size: 600 &times; 600 px</span>
+                            </div>
+                        </div>
+
+                        <!-- Collection Card 8 -->
+                        <div class="collection-slide-card">
+                            <div class="collection-placeholder" style="background: linear-gradient(145deg, #422914, #6e4624);">
+                                <span class="collection-badge">Collection 8</span>
+                                <h3 class="collection-card-name">Utsav</h3>
+                                <span class="collection-dim-label">Size: 600 &times; 600 px</span>
+                            </div>
+                        </div>
+
+                        <!-- Collection Card 9 -->
+                        <div class="collection-slide-card">
+                            <div class="collection-placeholder" style="background: linear-gradient(145deg, #1a2a40, #2f4c73);">
+                                <span class="collection-badge">Collection 9</span>
+                                <h3 class="collection-card-name">Rivaah</h3>
+                                <span class="collection-dim-label">Size: 600 &times; 600 px</span>
+                            </div>
+                        </div>
+
+                        <!-- Collection Card 10 -->
+                        <div class="collection-slide-card">
+                            <div class="collection-placeholder" style="background: linear-gradient(145deg, #3d1428, #692447);">
+                                <span class="collection-badge">Collection 10</span>
+                                <h3 class="collection-card-name">Tara</h3>
+                                <span class="collection-dim-label">Size: 600 &times; 600 px</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Button: VIEW ALL COLLECTIONS -->
+                <div class="collections-footer-wrap">
+                    <a href="Products.aspx" class="btn-view-collections">VIEW ALL COLLECTIONS</a>
+                </div>
+            </div>
+
+            <!-- Auto Slide Script (2 Seconds) -->
+            <script>
+                (function () {
+                    var track = document.getElementById('collectionsCarouselTrack');
+                    if (!track) return;
+
+                    var slides = track.querySelectorAll('.collection-slide-card');
+                    var totalSlides = slides.length;
+                    var currentIndex = 0;
+                    var autoTimer = null;
+
+                    function getSlideWidth() {
+                        if (slides.length === 0) return 260;
+                        return slides[0].offsetWidth + 18;
+                    }
+
+                    function scrollToIndex(idx) {
+                        if (idx < 0) idx = 0;
+                        if (idx > totalSlides - 5) idx = 0; // Loop back after 5 visible cards
+                        currentIndex = idx;
+                        track.scrollTo({
+                            left: idx * getSlideWidth(),
+                            behavior: 'smooth'
+                        });
+                    }
+
+                    function nextSlide() {
+                        var nextIdx = currentIndex + 1;
+                        if (nextIdx > totalSlides - 5) {
+                            nextIdx = 0;
+                        }
+                        scrollToIndex(nextIdx);
+                    }
+
+                    function startSlide() {
+                        stopSlide();
+                        autoTimer = setInterval(nextSlide, 2000); // 2 seconds auto slide
+                    }
+
+                    function stopSlide() {
+                        if (autoTimer) {
+                            clearInterval(autoTimer);
+                            autoTimer = null;
+                        }
+                    }
+
+                    startSlide();
+
+                    track.addEventListener('mouseenter', stopSlide);
+                    track.addEventListener('mouseleave', startSlide);
+
+                    track.addEventListener('scroll', function () {
+                        var slideW = getSlideWidth();
+                        if (slideW > 0) {
+                            var active = Math.round(track.scrollLeft / slideW);
+                            if (active >= 0 && active < totalSlides) {
+                                currentIndex = active;
+                            }
+                        }
+                    }, { passive: true });
+                })();
+            </script>
         </section>
     </asp:Content>
